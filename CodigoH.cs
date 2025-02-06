@@ -5,48 +5,41 @@ namespace fire
 {	
 	class Program
 	{
+
 		public static void Main()
-		{	
-			Console.WriteLine("Insira um número: ");
-			string opcao = (Console.ReadLine());
+		{		
+			Console.WriteLine("Digite uma letra: ");
+			string letra = Console.ReadLine();
+			string vogal = letra.ToLower();
 			
-			switch (opcao)
+			switch (vogal)
 			{	
-				case "1": 
-					Console.WriteLine("O dia inserido é domingo.");
+				case "a": 
+					Console.WriteLine("É uma vogal.");
 					break;
 
-				case "2": 
-					Console.WriteLine("O dia inserido é segunda-feira.");
+				case "e": 
+					Console.WriteLine("É uma vogal.");
 					break;					
 				
-				case "3":
-					Console.WriteLine("O dia inserido é terça-feira.");
+				case "i":
+					Console.WriteLine("É uma vogal.");
 					break;
 				
-				case "4":
-					Console.WriteLine("O dia inserido é quarta-feira.");
+				case "o":
+					Console.WriteLine("É uma vogal.");
 					break;					
 				
-				case "5":
-					Console.WriteLine("O dia inserido é quinta-feira.");
+				case "u":
+					Console.WriteLine("É uma vogal.");
 					break;
-				
-				case "6":
-					Console.WriteLine("O dia inserido é sexta-feira.");
-					break;
-				
-				case "7":
-					Console.WriteLine("O dia inserido é sábado.");
-					break;
-					
 				default:
 					Console.WriteLine("É uma consoante.");
 					break;
 			}
 			Console.ReadKey(true);
 		}
-    
+		
 	}
-  
+	
 }
